@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG_XML_Testing]">
+  <parameter name="URLAlert" value="http://www.omgeo.com/alert"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="URLLeader" value="http://www.omgeo.com/leadership_team"/>
+  <parameter name="URLHomePage" value="http://www.omgeo.com/"/>
+  <parameter name="URLAbout" value="http://www.omgeo.com/aboutomgeo"/>
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.OmgeoHomePageTestingV1">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="AlertPage"/>
+          <include name="test_Home_Page_Appear_Correct"/>
+          <include name="test_About_Page_Correct"/>
+          <include name="leaderShipPage"/>
+        </methods>
+      </class> <!-- test.OmgeoHomePageTestingV1 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestNG_XML_Testing] -->

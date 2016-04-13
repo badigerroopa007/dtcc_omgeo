@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG_XML_Testing">
+ <parameter name="browser" value="firefox"/>
+  <parameter name="URLHomePage" value="http://www.omgeo.com/"/>
+  <parameter name="URLAbout" value="http://www.omgeo.com/aboutomgeo"/>
+  <parameter name="URLAlert" value="http://www.omgeo.com/alert"/>
+  <parameter name="URLLeader" value="http://www.omgeo.com/leadership_team"/>
+    
+  <test name="FireTest">
+    <classes>
+      <class name="test.OmgeoHomePageTestingV1"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="ChromeTest">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.OmgeoHomePageTestingV1"/>
+    </classes>
+  </test> <!-- Test -->
+   
+</suite> <!-- Suite -->
